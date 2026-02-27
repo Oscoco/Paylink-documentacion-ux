@@ -1,16 +1,26 @@
-# React + Vite
+# Docu-ux Paylink
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto sirve como documentación UX de Paylink. Centraliza colores, patrones, estilos y componentes para que el equipo de desarrollo tenga una referencia visual clara y consistente.
 
-Currently, two official plugins are available:
+## ¿Para qué funciona?
+- Documentar la paleta oficial y tokens de Tailwind de Paylink.
+- Mostrar patrones de componentes reutilizables.
+- Servir como guía de estilos para el desarrollo de interfaces.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Ejecutar el proyecto
+1. Instala dependencias:
+   - `npm install`
+2. Levanta el entorno local:
+   - `npm run dev`
 
-## React Compiler
+## Agregar nuevos componentes o ejemplos
+1. Abre `src/App.jsx`.
+2. Crea una nueva sección o bloque siguiendo el estilo existente:
+   - Usa los tokens definidos en `tailwind.config.js`.
+   - Reutiliza las clases del design system cuando sea posible.
+3. Si necesitas nuevos tokens, agrégalos en `tailwind.config.js` y úsalos en la documentación.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estructura clave
+- `src/App.jsx`: contenido principal de la documentación.
+- `tailwind.config.js`: tokens de color y extensiones de Tailwind.
+- `src/index.css`: configuración base de estilos.
